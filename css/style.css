@@ -40,10 +40,10 @@ header nav ul li a{
     font-family: 'Roboto', sans-serif;
 }
 
-
 /*----MAIN----*/
 
 .promo{
+    margin: 0;
     background-image: url(../img/imagen15.jpg);
     width: 100%;
     height: 84vh;

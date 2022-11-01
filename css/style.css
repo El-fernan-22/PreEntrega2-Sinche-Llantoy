@@ -7,46 +7,26 @@
 }
 
 /*----HEADER----*/
-
-header{
-    background-color: white;
-    position: sticky;
-    top: 0%;
+.navbar{
+    padding-top: 0rem;
+    padding-bottom: 0rem;
 }
 
-header img{
-    height: 70px;
-    width: 280px;
+.navbar-brand img{
+    height: 100%;
+    width: 300px;
 }
 
-header nav ul{
-    background-color: #80B23C;
-    list-style: none;
-    padding: 5px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    transition: 1s;
+.nav-item a{ 
+    font-family: 'Roboto', sans-serif
 }
-
-header nav ul:hover{
-    background-color: #49206D;
-}
-
-header nav ul li a{
-    text-decoration: none;
-    color: white;
-    font-weight: 300;
-    font-family: 'Roboto', sans-serif;
-}
-
 /*----MAIN----*/
 
 .promo{
     margin: 0;
     background-image: url(../img/imagen15.jpg);
     width: 100%;
-    height: 84vh;
+    height: 87vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -89,13 +69,14 @@ header nav ul li a{
     background-color: #EB1F2B;
     color: white;
     padding: 15px;
+    margin: 15px 0;
     text-align: center;
-    margin: 10px 0px 10px 0px;   
 }
 
 .marcas p{
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 0rem;
 }
 
 .logos div{
@@ -114,338 +95,166 @@ header nav ul li a{
     color: white;
     padding: 15px;
     text-align: center;
-    margin: 10px 0px 10px 0px;
+    margin: 15px 0;
 }
 
 .descuento p{
     font-weight: 300;
     font-family: 'Roboto' , sans-serif;
+    margin-bottom: 0rem;
 }
 
-.grid-container div{
-    margin: 15px;
+.sale-text{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Roboto' , sans-serif;
+}
+
+.sale-container{
+    width: 100%;
+    background-color: #EB1F2B;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-.grid-container div h3{
-    font-size: 16px;
-    font-weight: 300;
-    font-family: 'Roboto' , sans-serif;
-    margin: 5px;   
+.sale-img{
+    width: 33%;
+    height: 50vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin: 1.5%;
 }
 
-.grid-container div p{
-    font-size: 16px;
-    font-weight: 300;
-    font-family: 'Roboto' , sans-serif;
-    margin: 5px;
+.sale-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
-.grid-container div a{
-    font-weight: 300;
+
+.sale-img .sale-name{
+    width: 100%;
+    height: 0vh;
+    background-color: rgba(7, 0, 0, 0.89);
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: .2s all;
+}
+
+.sale-name h3{
+    color: white;
+    margin-bottom: 0;
+    font-size: 16px;
     font-family: 'Roboto' , sans-serif;
-    text-decoration: none;
+}
+
+.sale-img:hover .sale-name{
+    height: 5vh;
+}
+
+.battle{
     background-color: #80B23C;
     color: white;
-    padding: 5px 150px 5px 150px;
-    border-radius: 5px;
-    transition: 1s;
-}
-
-.grid-container div a:hover{
-    background-color: #49206D;
-    transform: scale(1.1);
-}
-.grid-container{
+    padding: 15px;
     text-align: center;
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-template-rows: auto auto auto;
-    gap: 5px;
+    margin: 15px 0;
 }
 
-.grid-container div img{
-    height: 270px;
-    width: 360px
+.battle p{
+    font-weight: 300;
+    font-family: 'Roboto' , sans-serif;
+    margin-bottom: 0rem;
 }
 
-@media screen and (max-width: 1024px){
-    .promo{
-        height: 75vh;
-        width: 100%;
-    }
-    .promo div p{
-        font-size: 20px;
-        padding: 5px;
-    }
-    .promo div a{
-        font-size: 20px;
-        padding: 5px;
-        border-radius: 5px;
-    }
-    .logos div img{
-        height: 340px;
-        width: 340px;
-    }
-    .grid-container{
-        grid-template-columns: 33.3% 33.3% 33.3%;
-        grid-template-rows: auto auto auto auto auto;
-    }
-    .grid-container div img{
-        height: 230px;
-        width: 320px;
-    }
-    .grid-container div a{
-        padding: 5px 128px 5px 128px;
-    }   
-}
-@media screen and (max-width: 950px){
-    .promo{
-        height: 70vh;
-        width: 100%;
-    }
-    .promo div p{
-        font-size: 14px;
-        padding: 5px;
-    }
-    .promo div a{
-        font-size: 14px;
-        padding: 5px;
-        border-radius: 3px;
-    }
-    .logos div img{
-        height: 315px;
-        width: 315px;
-    }
-    .grid-container{
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto auto auto auto auto;
-    }
-    .grid-container div img{
-        height: 270px;
-        width: 360px;
-    }
-    .grid-container div a{
-        padding: 5px 148px 5px 148px;
-    }
-    .offer{
-        flex-direction: column;
-    }
-    .offer .offer-img img{
-        height: 370px;
-        width: 470px;
-    } 
+.ubicacion-title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Roboto' , sans-serif;
 }
 
-@media screen and (max-width: 750px){
+.ubicacion{
+    background:rgba(0, 0, 0, 0.7) url(../img/imagen26.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    width: 96vw;
+    height: 60vh;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ubicacion-text{
+    width: 50%;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Roboto' , sans-serif;
+}
+
+@media screen and (max-width: 350px){
+    .navbar-brand img{
+        height: 100%;
+        width: 200px;
+    }
     .promo{
-        height: 55vh;
         width: 100%;
-    }
-    .promo div p{
-        font-size: 10px;
-        padding: 5px;
-    }
-    .promo div a{
-        font-size: 10px;
-        padding: 5px;
-        border-radius: 2px;
+        height: 28vh;
     }
     .logos div img{
-        height: 250px;
+        height: 110px;
+        width: 110px;
+    }
+    .sale-container{
+        background-color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5px;
+        justify-items: center;
+    }
+    .sale-img{
+        width: 95%;
+        height: 95%;
+    }
+    .sale-img .sale-name{
+        height: 5vh;
+    }
+    .sale-img img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .ubicacion{
+        flex-wrap: wrap;
+    }
+    .ubicacion{
+        width: 90vw;
+        height: 90vh;
+    }
+    .ubicacion-maps iframe{
         width: 250px;
+        height: 150px;
+    }
+    .footer-container{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .prev{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
     }
     .grid-container{
-        grid-template-columns: 50% 50%;
-        grid-template-rows: repeat(5, auto);
-    }
-    .grid-container div img{
-        height: 240px;
-        width: 330px;
-    }
-    .grid-container div a{
-        padding: 5px 135px 5px 135px;
-    }
-    .offer{
-        flex-direction: column;
-    }
-    .offer .offer-img img{
-        height: 370px;
-        width: 470px;
-    }
-}
-
-@media screen and (max-width: 670px){
-    .promo{
-        height: 50vh;
-        width: 100%;
-    }
-    .promo div p{
-        font-size: 10px;
-        padding: 5px;
-    }
-    .promo div a{
-        font-size: 10px;
-        padding: 5px;
-        border-radius: 2px;
-    }
-    .logos div img{
-        height: 222px;
-        width: 222px;
-    }
-    .grid-container{
-        grid-template-columns: 50% 50%;
-        grid-template-rows: repeat(5,auto);
-    }
-    .grid-container div img{
-        height: 210px;
-        width: 300px;
-    }
-    .grid-container div a{
-        padding: 5px 120px 5px 120px;
-    }
-    .offer{
-        flex-direction: column;
-    }
-    .offer .offer-img img{
-        height: 370px;
-        width: 470px;
-    }
-    .offer .offer-info{
-        font-size: 20px;
-    }
-    footer{
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 540px){
-    .promo{
-        height: 39vh;
-        width: 100%;
-    }
-    .promo div p{
-        font-size: 6px;
-        padding: 5px;
-    }
-    .promo div a{
-        font-size: 6px;
-        padding: 5px;
-        border-radius: 2px;
-    }
-    .logos div img{
-        height: 178px;
-        width: 178px;
-    }
-    .grid-container{
-        grid-template-columns: 50% 50%;
-        grid-template-rows: repeat(5, auto);
-    }
-    .grid-container div img{
-        height: 170px;
-        width: 220px;
-    }
-    .grid-container div a{
-        padding: 5px 80px 5px 80px;
-    }
-    .offer{
-        flex-direction: column;
-    }
-    .offer .offer-img img{
-        height: 270px;
-        width: 370px;
-    }
-    footer{
-        flex-direction: column;
-    }
-}
-@media screen and (max-width: 480px){
-    .promo{
-        height: 20vh;
-        width: 100%;
-    }
-    .promo div p{
-        font-size: 6px;
-        padding: 5px;
-    }
-    .promo div a{
-        font-size: 6px;
-        padding: 5px;
-        border-radius: 2px;
-    }
-    .logos div img{
-        height: 137px;
-        width: 137px;
-    }
-    .grid-container{
-        grid-template-columns: 50% 50%;
-        grid-template-rows: repeat(5, auto);
-    }
-    .grid-container div img{
-        height: 130px;
-        width: 180px;
-    }
-    .grid-container div a{
-        padding: 5px 60px 5px 60px;
-    }
-    .offer{
-        flex-direction: column;
-    }
-    .offer .offer-info{
-        font-size: 15px;
-    }
-    .offer .offer-img img{
-        height: 270px;
-        width: 370px;
-    }
-    footer{
-        flex-direction: column;
-    }
-}
-@media screen and (max-width: 390px){
-    .promo{
-        height: 30vh;
-        width: 100%;
-    }
-    .promo div p{
-        font-size: 7px;
-        padding: 5px;
-    }
-    .promo div a{
-        font-size: 7px;
-        padding: 5px;
-        border-radius: 2px;
-    }
-    .logos div img{
-        height: 130px;
-        width: 130px;
-    }
-    .grid-container{
-        grid-template-columns: 50% 50%;
-        grid-template-rows: repeat(5, auto);
-    }
-    .grid-container div img{
-        height: 120px;
-        width: 170px;
-    }
-    .grid-container div a{
-        padding: 5px 55px 5px 55px;
-    }
-    .envios img{
-        height: 20px;
-        width: 100px;
-    }
-    .offer{
-        flex-direction: column;
-    }
-    .offer .offer-img img{
-        height: 270px;
-        width: 370px;
-    }
-    footer{
-        flex-direction: column;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, auto);
     }
 }
 
@@ -456,31 +265,60 @@ header nav ul li a{
 
 .envios{
     position: fixed;
-    right: 3%;
+    right: 6%;
     bottom: 0%;
 }
 
 /*----FOOTER----*/
 
-footer{
+.footer-container{
     background-color: black;
+    color: #999999;
+    padding: 20px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    padding: 10px;
+    align-items: flex-start;
+    transition: 1s;
+    font-family:'Roboto', sans-serif
 }
 
-footer p{
+.footer-container:hover{
     color: white;
-    font-size: 16px;
-    font-weight: 300;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    padding: 5px;
 }
 
+.footer-info ul{
+    padding-left: 0rem;
+    list-style: none;
+}
 
- /*----------MI CUENTA----------*/
+.footer-info a{
+    text-decoration: none;
+    color: #999999;
+    transition: 0.5s;
+}
+
+.footer-info a:hover{
+    text-decoration-line: underline;
+    color: white;
+}
+
+.footer-pages{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-reserved{
+    background-color: black;
+    text-align: center;
+    color: #999999;
+}
+
+.footer-reserved p{
+    margin-bottom: 0rem;
+    font-family:'Roboto', sans-serif
+}
+
+/*----------MI CUENTA----------*/
 
 .formulario{
     width: 400px;
@@ -540,49 +378,73 @@ footer p{
     color: white;
     padding: 15px;
     text-align: center;
-    margin: 10px 0px 10px 0px;   
+}
+
+.pre-banner p{
+    margin-bottom: 0rem;
+}
+
+.intro-prev{
+    margin: 10px;
+}
+
+.intro-prev{
+    text-align: center;
+    margin-left: 31px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto' , sans-serif;
 }
 
 .prev{
     margin: 20px;
     display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 71% 29%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
 }
 
-.prev-img img{
-    height: 550px;
-    width: 850px;
-}
-.prev-text{
-    height: 50%;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+.prev-card{
+    margin-bottom: 10px;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 
-.prev-text button{
+.prev-img img{
+    width: 23rem;
+}
+.prev-text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prev-text h3{
+    font-size: 17px;
+    font-weight: 300;
+    font-family: 'Roboto' , sans-serif;
+    margin: 5px;
+}
+
+.prev-a a{
+    font-weight: 300;
+    font-family: 'Roboto' , sans-serif;
+    text-decoration: none;
     background-color: #80B23C;
-    font-size: 18px;
     color: white;
-    padding: 20px 152px 20px 152px;
+    padding: 5px 150px 5px 150px;
     border-radius: 5px;
-    border: none;
     transition: 1s;
 }
 
-.prev-text button:hover{
+.prev-a a:hover{
     background-color: #49206D;
-}
-
-.prev-info{
-    width: 850px;
-    margin-bottom: 70px;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
 }
 
 /*-----------OFERTAS-----------*/
@@ -593,53 +455,70 @@ footer p{
     color: white;
     padding: 15px;
     text-align: center;
-    margin: 10px 0px 10px 0px; 
 }
 
-.offer{
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.offer-banner p{
+    margin-bottom: 0rem;
 }
 
-.offer-img img{
-    height: 350px;
-    width: 470px;
+.intro{
+    margin: 10px;
 }
 
-.offer-info{
-    margin: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;    
+.intro p{
+    margin-left: 28px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto' , sans-serif;
 }
 
-.offer-price{
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    height: 50%;
+.grid-container div{
+    margin: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-.offer-price button{
-    font-size: 18px;
-    background-color: #80B23C;
-    color: white;
-    padding: 20px 152px 20px 152px;
-    border-radius: 5px;
-    border: none;
-    transition: 1s;   
+.grid-container div h3{
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Roboto' , sans-serif;
+    margin: 5px;   
 }
 
-.offer-price button:hover{
+.grid-container div p{
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Roboto' , sans-serif;
+    margin: 5px;
+}
+.grid-container div a{
+    font-weight: 300;
+    font-family: 'Roboto' , sans-serif;
+    text-decoration: none;
+    background-color: #80B23C;
+    color: white;
+    padding: 5px 99px 5px 99px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.grid-container div a:hover{
     background-color: #49206D;
+    transform: scale(1.1);
+}
+
+.grid-container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 5px;
+}
+
+.grid-container div img{
+    width: 16rem;
 }
 
 /*----------CONTACTOS----------*/

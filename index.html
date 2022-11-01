@@ -12,15 +12,28 @@
 </head>
 <body>
     <header class="encabezado">
-        <img src="./img/NANDOX COLLECTOR.png" alt="Logo de la tienda">
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/preventa.html">Pre-Venta</a></li>
-                <li><a href="./pages/ofertas.html">Ofertas</a></li>
-                <li><a href="./pages/micuenta.html">Mi Cuenta</a></li>
-                <li><a href="./pages/contactos.html">Contactos</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./img/NANDOX COLLECTOR.png" alt="logo de la pagina"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html">INICIO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/preventa.html">PRE-VENTA</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/ofertas.html">OFERTAS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/micuenta.html">MI CUENTA</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../pages/contactos.html">CONTACTANOS</a></li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
     <main class="contenido">
@@ -44,84 +57,95 @@
             <p>Aprovecha los descuentos del dia</p>
         </section>
         <section>
-            <div class="grid-container">
-                <div>
-                    <img src="./img/imagen5.jpg" alt="Imagen de mandalorian">
-                    <h3>The Mandalorian (Beskar Armor)</h3>
-                    <p>$24.99</p>
-                    <a href="">Comprar</a>
+            <div class="sale-text">
+                <p>LOS MAS VENDIDOS</p>
+            </div>
+            <div class="sale-container">
+                <div class="sale-img">
+                    <a href="./pages/ofertas.html"><img src="./img/imagen23.png" alt="Imagen de batman"></a>
+                    <div class="sale-name">
+                        <h3>Batman</h3>
+                    </div>
                 </div>
-                <div>
-                    <img src="./img/imagen6.jpg" alt="Imagen del general grievous">
-                    <h3>General Grievous (Revenge of the Sith)</h3>
-                    <p>$39.99</p>
-                    <a href="">Comprar</a>
+                <div class="sale-img">
+                    <a href="./pages/preventa.html"><img src="./img/imagen22.png" alt="Imagen de ironman"></a>
+                    <div class="sale-name">
+                        <h3>Iron Man Mark III</h3>
+                    </div>
                 </div>
-                <div>
-                    <img src="./img/imagen7.jpg" alt="Imagen de magneto">
-                    <h3>Magneto (Original Comic Ver.)</h3>
-                    <p>$104.99</p>
-                    <a href="">Comprar</a>
+                <div class="sale-img">
+                    <a href="./pages/ofertas.html"><img src="./img/imagen25.png" alt="Imagen de gohan"></a>
+                    <div class="sale-name">
+                        <h3>Ultimate Gohan</h3>
+                    </div>
                 </div>
-                <div>
-                    <img src="./img/imagen8.jpg" alt="Imagen de thor">
-                    <h3>Avengers: Endgame Thor</h3>
-                    <p>$94.99</p>
-                    <a href="">Comprar</a>
+                <div class="sale-img">
+                    <a href="./pages/preventa.html"><img src="./img/imagen24.png" alt="Imagen duende verde"></a>
+                    <div class="sale-name">
+                        <h3>Duende Verde</h3>
+                    </div>
                 </div>
-                <div>
-                    <img src="./img/imagen9.jpg" alt="Imagen de superman cyborg">
-                    <h3>The Return of Superman Cyborg Superman</h3>
-                    <p>$104.99</p>
-                    <a href="">Comprar</a>
+            </div>
+        </section>
+        <section class="battle">
+            <p>Todos los caminos conducen a Nandox Collector</p>
+        </section>
+        <section>
+            <div class="ubicacion-title">
+                <p>VISITANOS</p>
+            </div>
+            <div class="ubicacion">
+                <div class="ubicacion-text">
+                    <p>Estamos ubicados en el Centro Comercial Arenales 3er. piso galeria 616. 
+                    Nos podras encontrar en los horarios de Lunes a Viernes de 10 am. 
+                    hasta las 6 pm. y los Sabados de 10 am. a 4 pm. Te esperamos.</p>
                 </div>
-                <div>
-                    <img src="./img/imagen10.jpg" alt="Imagen de batman armored">
-                    <h3>Batman: The Dark Knight Returns</h3>
-                    <p>$19.99</p>
-                    <a href="">Comprar</a>
+                <div class="ubicacion-maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.4395090523144!2d-77.03806328561741!3d-12.082035245846145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c95b585c014d%3A0x62d21b3e37bcbca9!2sCentro%20Comercial%20Arenales!5e0!3m2!1ses-419!2spe!4v1667042161889!5m2!1ses-419!2spe" 
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div>
-                    <img src="./img/imagen11.jpg" alt="Imagen de iron man">
-                    <h3>Justice League Batman (Tactical Suit)</h3>
-                    <p>$379.99</p>
-                    <a href="">Reservar</a>
-                </div>
-                <div>
-                    <img src="./img/imagen12.jpg" alt="Imagen de the merciless">
-                    <h3>Dark Nights: Death Metal The Merciless</h3>
-                    <p>$119.99</p>
-                    <a href="">Comprar</a>
-                </div>
-                <div>
-                    <img src="./img/imagen14.jpg" alt="Imagen de darth vader">
-                    <h3>Darth Vader (Obi-Wan Kenobi)</h3>
-                    <p>$29.99</p>
-                    <a href="">Comprar</a>
-                </div>
-            </div>               
+            </div>        
         </section>
     </main>
-    <footer class="pie">
-        <div class="redes">
-            <p>Nuestras redes</p>
-            <a target="_blank" href="https://www.facebook.com/"><img src="./img/facebook.png" alt=""></a>
-            <a target="_blank" href="https://www.instagram.com/"><img src="./img/instagram.png" alt=""></a>
-            <a target="_blank" href="https://www.youtube.com/"><img src="./img/youtube.png" alt=""></a>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>NANDOX COLLECTOR</p>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./pages/preventa.html">Pre-venta</a></li>
+                    <li><a href="./pages/ofertas.html">Ofertas</a></li>
+                    <li><a href="./pages/micuenta.html">Mi Cuenta</a></li>
+                    <li><a href="./pages/contactos.html">Contactanos</a></li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <p>ATENCION AL CLIENTE</p>
+                <ul>
+                    <li><a href="#">Politica de Devoluciones</a></li>
+                    <li><a href="#">Cambios</a></li>
+                    <li><a href="#">Libro de Reclamaciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-pages">
+                <p>NUESTRAS REDES</p>
+                <a target="_blank" href="https://www.facebook.com/"><img src="./img/facebook.png" alt="Logo de facebook"></a>
+                <a target="_blank" href="https://www.instagram.com/"><img src="./img/instagram.png" alt="Logo de instagram"></a>
+                <a target="_blank" href="https://www.youtube.com/"><img src="./img/youtube.png" alt="Logo de youtube"></a>
+            </div>
+            <div class="footer-pages">
+                <p>MEDIOS DE PAGO</p>
+                <img src="./img/paypal.png" alt="Logo paypal">
+                <img src="./img/visa.png" alt="Logo visa">
+            </div>
         </div>
-        <div class="pagos">
-            <p>Medios de pago</p>
-            <img src="./img/paypal.png" alt="Logo paypal">
-            <img src="./img/visa.png" alt="Logo visa">
-        </div>
-        <div class="ubicacion">
-            <p>Ubicanos</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9274.66787441986!2d-76.90805033924472!3d-12.213200457763811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105bea86d63f079%3A0xeddb39a56cc90216!2sMercado%20Ateca%20(Mercado%20de%20Jos%C3%A9%20G%C3%A1lvez)!5e0!3m2!1ses-419!2spe!4v1664005570731!5m2!1ses-419!2spe"
-             width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="footer-reserved">
+            <p>Todos los derechos reservados</p>
+            <p>Creado por: Fernando Sinche</p>
         </div>
     </footer>
     <div class="envios">
-        <img src="./img/logo flash.png" alt="">
+        <img src="./img/logo flash.png" alt="Logo flash">
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

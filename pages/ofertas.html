@@ -4,21 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Ofertas - Nandox Collector</title>
     <link rel="shortcut icon" href="../img/NANDOX COLLECTOR.png">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
-        <img src="../img/NANDOX COLLECTOR.png" alt="Logo de la tienda">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./preventa.html">Pre-Venta</a></li>
-                <li><a href="./ofertas.html">Ofertas</a></li>
-                <li><a href="./micuenta.html">Mi Cuenta</a></li>
-                <li><a href="./contactos.html">Contactos</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/NANDOX COLLECTOR.png" alt="logo de la pagina"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">INICIO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./preventa.html">PRE-VENTA</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./ofertas.html">OFERTAS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./micuenta.html">MI CUENTA</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contactos.html">CONTACTANOS</a></li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -26,47 +41,125 @@
             <p>Ofertas</p>
         </section>
         <section>
-            <div class="offer">
-                <div class="offer-img">
+            <div class="intro">
+                <p>OFERTAS DE NOVIEMBRE</p>
+                <p>Nandox Collector presenta las ofertas que tenemos por este mes. Encuentra a tus personajes favoritos como Iron Man, Batman, Mandalorian, etc. ¡Los tenemos a todos! 
+                   <br> ¡Consigue la figura que tanto deseas y has crecer tu colección!</p>
+            </div>
+            <div class="grid-container">
+                <div>
+                    <img src="../img/imagen5.jpg" alt="Imagen de mandalorian">
+                    <h3>The Mandalorian (Beskar Armor)</h3>
+                    <p>$24.99</p>
+                    <a href="#">Comprar</a>
+                </div>
+                <div>
+                    <img src="../img/imagen6.jpg" alt="Imagen del general grievous">
+                    <h3>General Grievous Revenge of the Sith</h3>
+                    <p>$39.99</p>
+                    <a href="#">Comprar</a>
+                </div>
+                <div>
+                    <img src="../img/imagen7.jpg" alt="Imagen de magneto">
+                    <h3>Magneto (Original Comic Ver.)</h3>
+                    <p>$104.99</p>
+                    <a href="#">Comprar</a>
+                </div>
+                <div>
+                    <img src="../img/imagen8.jpg" alt="Imagen de thor">
+                    <h3>Avengers: Endgame Thor</h3>
+                    <p>$94.99</p>
+                    <a href="#">Comprar</a>
+                </div>
+                <div>
+                    <img src="../img/imagen9.jpg" alt="Imagen de superman cyborg">
+                    <h3>The Return of Superman Cyborg Superman</h3>
+                    <p>$104.99</p>
+                    <a href="#">Comprar</a>
+                </div>
+                <div>
+                    <img src="../img/imagen10.jpg" alt="Imagen de batman armored">
+                    <h3>Batman: The Dark Knight Returns</h3>
+                    <p>$19.99</p>
+                    <a href="#">Comprar</a>
+                </div>
+                <div>
+                    <img src="../img/imagen11.jpg" alt="Imagen de batman">
+                    <h3>Justice League Batman (Tactical Suit)</h3>
+                    <p>$379.99</p>
+                    <a href="#">Reservar</a>
+                </div>
+                <div>
+                    <img src="../img/imagen12.jpg" alt="Imagen de the merciless">
+                    <h3>Dark Nights: Death Metal The Merciless</h3>
+                    <p>$119.99</p>
+                    <a href="#">Comprar</a>
+                </div>
+                <div>
+                    <img src="../img/imagen14.jpg" alt="Imagen de darth vader">
+                    <h3>Darth Vader (Obi-Wan Kenobi)</h3>
+                    <p>$29.99</p>
+                    <a href="#">Comprar</a>
+                </div>
+                <div>
                     <img src="../img/imagen13.jpg" alt="Imagen de vegeta">
+                    <h3>Dragon Ball Super: Super Hero Vegeta</h3>
+                    <p>$34.99</p>
+                    <a href="#">Comprar</a>
                 </div>
-                <div class="offer-info">
-                        <h2>Dragon Ball Super: Super Hero S.H.Figuarts Vegeta</h2>
-                        <p>¡Vegeta de Dragon Ball Super: Super Hero ahora se lanza
-                        de la marca SH Figuarts! Esta figura detallada está altamente 
-                        articulada y presenta varias partes intercambiables para una
-                        amplia variedad de poses.</p>               
+                <div>
+                    <img src="../img/imagen28.jpg" alt="Imagen de piccolo">
+                    <h3>Dragon Ball Super: Super Hero Piccolo</h3>
+                    <p>$34.99</p>
+                    <a href="#">Comprar</a>
                 </div>
-                <div class="offer-price">
-                    <p>En oferta</p>
-                    <p>$ 34.99</p>
-                    <form>
-                        <button class="boton" type="submit">Comprar</button>
-                    </form>
+                <div>
+                    <img src="../img/imagen27.jpg" alt="Imagen de gohan">
+                    <h3>Dragon Ball Super: Super Hero Ultimate Gohan</h3>
+                    <p>$44.99</p>
+                    <a href="#">Comprar</a>
                 </div>
-            </div>           
+            </div>                 
         </section>
     </main>
-    <div class="envios">
-        <img src="../img/logo flash.png" alt="">
-    </div>
     <footer>
-        <div class="redes">
-            <p>Nuestras redes</p>
-            <a target="_blank" href="https://www.facebook.com/"><img src="../img/facebook.png" alt=""></a>
-            <a target="_blank" href="https://www.instagram.com/"><img src="../img/instagram.png" alt=""></a>
-            <a target="_blank" href="https://www.youtube.com/"><img src="../img/youtube.png" alt=""></a>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>NANDOX COLLECTOR</p>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./preventa.html">Pre-venta</a></li>
+                    <li><a href="./ofertas.html">Ofertas</a></li>
+                    <li><a href="./micuenta.html">Mi Cuenta</a></li>
+                    <li><a href="./contactos.html">Contactanos</a></li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <p>ATENCION AL CLIENTE</p>
+                <ul>
+                    <li><a href="#">Politica de Devoluciones</a></li>
+                    <li><a href="#">Cambios</a></li>
+                    <li><a href="#">Libro de Reclamaciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-pages">
+                <p>NUESTRAS REDES</p>
+                <a target="_blank" href="https://www.facebook.com/"><img src="../img/facebook.png" alt=""></a>
+                <a target="_blank" href="https://www.instagram.com/"><img src="../img/instagram.png" alt=""></a>
+                <a target="_blank" href="https://www.youtube.com/"><img src="../img/youtube.png" alt=""></a>
+            </div>
+            <div class="footer-pages">
+                <p>MEDIOS DE PAGO</p>
+                <img src="../img/paypal.png" alt="Logo paypal">
+                <img src="../img/visa.png" alt="Logo visa">
+            </div>
         </div>
-        <div class="pagos">
-            <p>Medios de pago</p>
-            <img src="../img/paypal.png" alt="Logo paypal">
-            <img src="../img/visa.png" alt="Logo visa">
-        </div>
-        <div class="ubicacion">
-            <p>Ubicanos</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9274.66787441986!2d-76.90805033924472!3d-12.213200457763811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105bea86d63f079%3A0xeddb39a56cc90216!2sMercado%20Ateca%20(Mercado%20de%20Jos%C3%A9%20G%C3%A1lvez)!5e0!3m2!1ses-419!2spe!4v1664005570731!5m2!1ses-419!2spe"
-             width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="footer-reserved">
+            <p>Todos los derechos reservados</p>
+            <p>Creado por: Fernando Sinche</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

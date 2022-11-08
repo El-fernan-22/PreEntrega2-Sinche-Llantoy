@@ -22,17 +22,15 @@
 }
 /*----MAIN----*/
 
-.promo{
-    margin: 0;
-    background-image: url(../img/imagen15.jpg);
+.portada{
     width: 100%;
-    height: 87vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+.portada img{
+    width: 100%;
+    min-width: 350px;
 }
 
-.promo div{
+.promo{
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -40,7 +38,7 @@
     align-items: center;
 }
 
-.promo div a{
+.promo a{
     text-decoration: none;
     background-color: #49206D;
     color: white;
@@ -50,15 +48,15 @@
     transition: 1s;
 }
 
-.promo div a:hover{
+.promo a:hover{
     background-color: #80B23C;
     transform: scale(1.1);
 }
 
 .promo p{
     font-size: 20px;
-    border: 1px solid white;
-    color: white;
+    border: 1px solid black;
+    color: black;
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
     padding: 10px;
@@ -79,15 +77,17 @@
     margin-bottom: 0rem;
 }
 
-.logos div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.logos{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
 }
 
-.logos div img{
-    height: 448px;
-    width: 448px;
+.logos img{
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
 }
 
 .descuento{
@@ -199,7 +199,7 @@
     font-family: 'Roboto' , sans-serif;
 }
 
-@media screen and (max-width: 390px){
+@media screen and (max-width: 520px){
     .navbar-brand img{
         height: 100%;
         width: 200px;

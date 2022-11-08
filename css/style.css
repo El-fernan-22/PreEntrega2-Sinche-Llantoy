@@ -63,7 +63,7 @@
     margin-bottom: 20px;
 }
 
-.marcas{
+.banner1{
     background-color: #EB1F2B;
     color: white;
     padding: 15px;
@@ -71,7 +71,7 @@
     text-align: center;
 }
 
-.marcas p{
+.banner1 p{
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 0rem;
@@ -90,7 +90,7 @@
     width: 100%;
 }
 
-.descuento{
+.banner2{
     background-color: #49206D;
     color: white;
     padding: 15px;
@@ -98,37 +98,37 @@
     margin: 15px 0;
 }
 
-.descuento p{
+.banner2 p{
     font-weight: 300;
     font-family: 'Roboto' , sans-serif;
     margin-bottom: 0rem;
 }
 
-.sale-text{
+.titulo1{
     text-align: center;
     font-size: 30px;
     font-weight: 400;
     font-family: 'Roboto' , sans-serif;
 }
 
-.sale-container{
+.sale{
     width: 100%;
-    background-color: #EB1F2B;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    column-gap: 10px;
 }
 
 .sale-img{
-    width: 33%;
-    height: 50vh;
+    width: 100%;
     text-align: center;
     overflow: hidden;
     position: relative;
-    margin: 1.5%;
 }
 
 .sale-img img{
+    display: block;
+    margin: 0 auto;
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -158,7 +158,7 @@
     height: 5vh;
 }
 
-.battle{
+.banner3{
     background-color: #80B23C;
     color: white;
     padding: 15px;
@@ -166,20 +166,20 @@
     margin: 15px 0;
 }
 
-.battle p{
+.banner3 p{
     font-weight: 300;
     font-family: 'Roboto' , sans-serif;
     margin-bottom: 0rem;
 }
 
-.ubicacion-title{
+.titulo2{
     text-align: center;
     font-size: 30px;
     font-weight: 400;
     font-family: 'Roboto' , sans-serif;
 }
 
-.ubicacion{
+.maps{
     background:rgba(0, 0, 0, 0.7) url(../img/imagen26.jpg);
     background-size: cover;
     background-blend-mode: darken;
@@ -191,71 +191,12 @@
     align-items: center;
 }
 
-.ubicacion-text{
+.maps-text{
     width: 50%;
     color: white;
     font-size: 16px;
     font-weight: 300;
     font-family: 'Roboto' , sans-serif;
-}
-
-@media screen and (max-width: 520px){
-    .navbar-brand img{
-        height: 100%;
-        width: 200px;
-    }
-    .promo{
-        width: 100%;
-        height: 28vh;
-    }
-    .logos div img{
-        height: 110px;
-        width: 110px;
-    }
-    .sale-container{
-        background-color: white;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 5px;
-        justify-items: center;
-    }
-    .sale-img{
-        width: 95%;
-        height: 95%;
-    }
-    .sale-img .sale-name{
-        height: 5vh;
-    }
-    .sale-img img{
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-    .ubicacion{
-        flex-wrap: wrap;
-    }
-    .ubicacion{
-        width: 90vw;
-        height: 90vh;
-    }
-    .ubicacion-maps iframe{
-        width: 250px;
-        height: 150px;
-    }
-    .footer-container{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .prev{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-    }
-    .grid-container{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(6, auto);
-    }
 }
 
 .envios img{

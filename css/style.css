@@ -37,30 +37,6 @@
     justify-content: space-evenly;
     align-items: center;
 }
-.promo a{
-    text-decoration: none;
-    background-color: #49206D;
-    color: white;
-    padding: 10px;
-    font-weight: 300;
-    font-family: 'Roboto', sans-serif;
-    transition: 1s;
-}
-
-.promo a:hover{
-    background-color: #80B23C;
-    transform: scale(1.1);
-}
-
-.promo p{
-    font-size: 20px;
-    border: 1px solid black;
-    color: black;
-    font-weight: 300;
-    font-family: 'Roboto', sans-serif;
-    padding: 10px;
-    margin-bottom: 20px;
-}
 
 .banner1{
     background-color: #EB1F2B;
@@ -198,12 +174,14 @@
 }
 
 .envios img{
-    height: 150px;
-    width: 150x;
+    display: block;
+    margin: 0 auto;
+    max-height: 120px;
+    max-width: 120px;
 }
 .envios{
     position: fixed;
-    right: 6%;
+    right: 9%;
     bottom: 0%;
 }
 
@@ -288,11 +266,12 @@
 .card{
     border: none;
 }
+
 .card-body{
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .card-text{
@@ -312,6 +291,7 @@
 }
 .card-body a:hover{
     background-color: #49206D;
+    transform: scale(1.1);
 }
 
 /*-----------OFERTAS-----------*/
@@ -339,6 +319,19 @@
 
 
 /*----------MI CUENTA----------*/
+
+.banner6{
+    background-color: #EB1F2B;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin: 15px 0;
+}
+.banner6 p{
+    font-weight: 300;
+    font-family: 'Roboto' , sans-serif;
+    margin-bottom: 0rem;
+}
 
 .formulario1{
     width: 400px;
@@ -384,6 +377,19 @@
 
 
 /*----------CONTACTOS----------*/
+
+.banner7{
+    background-color: #EB1F2B;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin: 15px 0;
+}
+.banner7 p{
+    font-weight: 300;
+    font-family: 'Roboto' , sans-serif;
+    margin-bottom: 0rem;
+}
 
 .formulario2{
     width: 400px;
@@ -444,6 +450,32 @@ textarea{
 }
 
 
+@media screen and (max-width: 920px){
+    .sale-img .sale-name{
+        height: 4vh;
+    }
+    .sale-name h3{
+        font-weight: 100;
+    }
+    /*--------FOOTER---------*/
+    .footer-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+    .footer-container:hover{
+        color: #999999;
+    }
+    .footer1 a:hover{
+        text-decoration-line: none;
+        color: #999999;
+    }
+    
+    .envios{
+        position: fixed;
+        right: 3%;
+        bottom: 0%;
+    }
+}
 
 @media screen and (max-width: 520px) {
     .titulo1{
@@ -480,29 +512,35 @@ textarea{
         text-decoration-line: none;
         color: #999999;
     }
+    .envios img{
+        display: block;
+        margin: 0 auto;
+        max-height: 90px;
+        max-width: 90px;
+    }
+    .envios{
+        position: fixed;
+        right: 1%;
+        bottom: 13%;
+    }
 
     /*---------PREVENTA---------*/
     
-    .pre{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-        row-gap: 30px;
+    .gx-5{
+        --bs-gutter-x: 1rem
+    }
+    
+    /*----------MI CUENTA---------*/
+
+    .formulario1{
+        width: 300px;
     }
 
-    /*-----------OFERTAS----------*/
-    .grid-container{
-        grid-template-columns: 50% 50%;
-        grid-template-rows: repeat(6, auto);
+    /*----------CONTACTOS----------*/
+
+    .formulario2{
+        width: 300px;
     }
-    .grid-container div img{
-        width: 14rem;
-    }
-    .grid-container div a{
-        padding: 5px 80px 5px 80px;  
-    }
-    .grid-container div a:hover{
-        background-color: #80B23C;
-        transform: none;
-    }
+    
 
 }
